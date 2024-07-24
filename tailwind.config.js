@@ -18,6 +18,7 @@ module.exports = {
       pink_light: '#F37AA5',
       purple_medium: '#E3D7EA',
       purple_light: '#F5E8F3',
+      yellow_light: '#FBFFAF', 
       transparent: 'transparent',
       white: '#FFFFFF',
     },
