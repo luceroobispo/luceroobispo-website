@@ -15,16 +15,16 @@ function Header() {
             </div>
 
             {/* Quick links */}
-            <div className="bg-yellow_light text-black py-8 md:py-16 px-10">
+            <div className="bg-yellow_light text-black py-8 md:py-3 px-10">
                 <div className="container mx-auto flex flex-col md:flex-row items-center">
-                    <div className="w-full md:w-1/2 flex items-center justify-center mb-4 md:mb-0">
-                        <Image src={"/images/github-icon.png"} width={60} height={60} alt="GitHub Icon" />
+                    <a href="https://github.com/luceroobispo" className="w-full md:w-1/2 flex items-center justify-center mb-4 md:mb-0 hover:text-pink_dark" target="_blank" rel="noopener noreferrer">
+                        <Image src={"/images/github-icon.png"} width={40} height={40} alt="GitHub Icon" />
                         <p className="text-lg ml-4">https://github.com/luceroobispo</p>
-                    </div>
-                    <div className="w-full md:w-1/2 flex items-center justify-center">
-                        <Image src={"/images/linkedin-icon.png"} width={60} height={60} alt="LinkedIn Icon" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/luceroobispo" className="w-full md:w-1/2 flex items-center justify-center hover:text-pink_dark" target="_blank" rel="noopener noreferrer">
+                        <Image src={"/images/linkedin-icon.png"} width={40} height={40} alt="LinkedIn Icon" />
                         <p className="text-lg ml-4">https://www.linkedin.com/in/luceroobispo</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </header>
