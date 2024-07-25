@@ -41,7 +41,7 @@ const skills = [
     { name: 'Lighthouse', image: '/images/lighthouse-icon.png', type: 'Tools' },
     { name: 'Notion', image: '/images/notion-icon.png', type: 'Tools' },
     { name: 'Android\nStudio', image: '/images/androidstudio-icon.png', type: 'Tools' },
-    { name: 'DBeaver', image: '/images/lighthouse-icon.png', type: 'Tools' },
+    { name: 'DBeaver', image: '/images/dbeaver-icon.png', type: 'Tools' },
     { name: 'Figma', image: '/images/figma-icon.png', type: 'Tools' },
     { name: 'Github', image: '/images/githubskill-icon.png', type: 'Tools' },
     { name: 'Git', image: '/images/git-icon.png', type: 'Tools' },
@@ -58,16 +58,16 @@ const MySkillsSection = () => {
 
     return (
         <section className="bg-[#1B1B1B] font-['Open_Sans'] py-16 px-10">
-            <div className="flex justify-center mb-4">
+            <div className="flex justify-center mb-16">
                 <h1 className="text-[30px] font-bold bg-[#2A2A2A] border-4 border-pink_dark2 text-pink_dark2 rounded-md py-3 px-10 inline-block">
                     MY SKILLS
                 </h1>
             </div>
-            <div className="flex justify-center space-x-4 mb-6">
-                {['All', 'Frontend', 'Backend', 'Database', 'Tools', 'Soft skills'].map((type) => (
+            <div className="flex flex-wrap justify-center mb-10">
+                {['All', 'Frontend', 'Backend', 'Database', 'Tools'].map((type) => (
                     <button
                         key={type}
-                        className="bg-[#2A2A2A] text-white px-4 py-2 rounded-md border border-[#F16497]"
+                        className="bg-[#2A2A2A] text-white hover:text-[#2A2A2A] hover:bg-white px-4 py-2 mb-5 ml-5 rounded-md border-[#F16497] border-2 flex-1 text-center"
                         onClick={() => filterSkills(type)}
                     >
                         {type}
