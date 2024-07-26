@@ -1,5 +1,3 @@
-// components/ProjectCard.tsx
-
 'use client';
 
 import React from "react";
@@ -8,12 +6,13 @@ import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 interface Item {
   title: string;
   img: string;
-  price: string;
+  type: string;
+  url: string;
 }
 
 const ProjectCard: React.FC<{ item: Item }> = ({ item }) => {
   const handlePress = () => {
-    console.log("item pressed");
+    window.open(item.url, '_blank');
   };
 
   return (
@@ -35,7 +34,7 @@ const ProjectCard: React.FC<{ item: Item }> = ({ item }) => {
       </CardBody>
       <CardFooter className="text-sm justify-between p-4">
         <b>{item.title}</b>
-        <p className="text-gray-500">{item.price}</p>
+        <p className="text-gray-500">{item.type}</p>
       </CardFooter>
     </Card>
   );
