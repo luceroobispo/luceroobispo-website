@@ -48,11 +48,6 @@ function NavBar() {
                     Projects
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-black py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-pink_light border-pink_light  md:hover:text-pink_dark2  md:hover:bg-transparent">
-                  <Link href="/contact" onClick={() => setNavbar(!navbar)}>
-                    Contact
-                  </Link>
-                </li>
               </ul>
             </div>
           </div>
