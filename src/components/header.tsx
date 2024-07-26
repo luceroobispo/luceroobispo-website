@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 function Header() {
     return (
-        <header className="font-['Open_Sans']">
+        <header className="font-['Open_Sans'] h-screen flex flex-col">
             {/* Title and main image */}
-            <div className="bg-pink_dark text-white py-16 px-10">
-                <div className="container mx-auto flex flex-col md:flex-row items-center md:items-start pt-16">
+            <div className="bg-pink_dark text-white flex-grow flex items-center justify-center">
+                <div className="container mx-auto flex flex-col md:flex-row items-center md:items-start">
                     <div className="w-full md:w-1/2 text-center md:text-left">
                         <h1 className="text-3xl md:text-5xl font-bold">Hello, I’m Lucero Obispo</h1>
                         <p className="text-base md:text-lg mt-4">Software engineering student with a love for mobile development. I’m into hackathons, competitive programming, and volunteering to boost tech education. Always excited to connect and collaborate!</p>
@@ -13,6 +13,7 @@ function Header() {
                     <div className="hidden md:block md:w-1/2"></div>
                 </div>
             </div>
+
 
             {/* Quick links */}
             <div className="bg-yellow_light text-black py-8 md:py-3 px-10">

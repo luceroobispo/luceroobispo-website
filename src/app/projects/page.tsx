@@ -1,12 +1,12 @@
 import NavBar from '../../components/navbar';
+import React from "react";
+import Projects from '@/components/projects-list';
 
 export default function ProjectsPage() {
     return (
     <div>
         <NavBar />
-        <section className="text-black h-screen bg-black text-center flex">
-            <h1 className="m-auto font-sans text-7xl text-purple-600 font-bold">Projects</h1>
-        </section>
+        <Projects/>
     </div>
       
     );
